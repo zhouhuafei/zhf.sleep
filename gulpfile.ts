@@ -10,7 +10,18 @@ function ts2cjs () {
   return gulp.src(`${src}/**/*.ts`)
     .pipe(babel({
       ...babelConfig,
-      plugins: ['@babel/plugin-transform-modules-commonjs']
+      plugins: [
+        ([
+          require.resolve('babel-plugin-module-resolver'),
+          {
+            root: ['./'],
+            alias: {
+              '@': './src'
+            }
+          }
+        ] as any),
+        '@babel/plugin-transform-modules-commonjs'
+      ]
     }))
     .pipe(gulp.dest(dist))
 }
