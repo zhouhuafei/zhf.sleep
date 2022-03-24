@@ -16,6 +16,8 @@ function ts2cjs () {
           {
             root: ['./'],
             alias: {
+              '@root': './',
+              '@src': './src',
               '@': './src'
             }
           }
