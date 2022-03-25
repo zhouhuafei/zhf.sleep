@@ -1,6 +1,6 @@
 ## 把ts打包成js
 * 把ts打包成js需要使用`gulp`命令。
-* 使用`gulp`命令需要`gulp-cli`包和`gulp`包和`gulp-babel`包和`@babel/preset-env`包（含`@babel/core`包和`@babel/plugin-transform-modules-commonjs`包）和`@babel/plugin-transform-runtime`包和`@babel/plugin-transform-typescript`包和`gulpfile.ts`配置文件。
+* 使用`gulp`命令需要`gulp-cli`包和`gulp`包和`gulp-babel`包和`@babel/preset-env`包（含`@babel/core`包和`@babel/plugin-transform-modules-commonjs`包）和`@babel/plugin-transform-typescript`包和`gulpfile.ts`配置文件。
 
 ## 配置alias
 * 配置alias需要`babel-plugin-module-resolver`包和`typescript-transform-paths`包。
