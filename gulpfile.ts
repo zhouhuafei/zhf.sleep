@@ -4,7 +4,7 @@ import babel from 'gulp-babel'
 const src = './src'
 const dist = './dist'
 const isProduction = process.env.NODE_ENV === 'production'
-const babelConfig = { presets: ['@babel/typescript'] }
+const babelConfig = { presets: ['@babel/preset-env'] }
 
 function ts2cjs () {
   return gulp.src(`${src}/**/*.ts`)
@@ -22,6 +22,8 @@ function ts2cjs () {
             }
           }
         ] as any),
+        '@babel/plugin-transform-runtime',
+        '@babel/plugin-transform-typescript',
         '@babel/plugin-transform-modules-commonjs'
       ]
     }))
