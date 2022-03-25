@@ -1,32 +1,14 @@
 import gulp from 'gulp'
 import babel from 'gulp-babel'
+import babelConfig from './babel.config'
 
 const src = './src'
 const dist = './dist'
 const isProduction = process.env.NODE_ENV === 'production'
-const babelConfig = { presets: ['@babel/preset-env'] }
 
 function ts2cjs () {
   return gulp.src(`${src}/**/*.ts`)
-    .pipe(babel({
-      ...babelConfig,
-      plugins: [
-        ([
-          require.resolve('babel-plugin-module-resolver'),
-          {
-            root: ['./'],
-            alias: {
-              '@root': './',
-              '@src': './src',
-              '@': './src'
-            }
-          }
-        ] as any),
-        '@babel/plugin-transform-runtime',
-        '@babel/plugin-transform-typescript',
-        '@babel/plugin-transform-modules-commonjs'
-      ]
-    }))
+    .pipe(babel(babelConfig))
     .pipe(gulp.dest(dist))
 }
 
