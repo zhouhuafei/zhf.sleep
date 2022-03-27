@@ -16,7 +16,7 @@ function watcher () {
   gulp.watch(`${src}/**/*.ts`, gulp.series(ts2js))
 }
 
-const series: Array<any> = [ts2js]
+const series: Array<gulp.TaskFunction> = [ts2js]
 if (!isProduction) {
   series.push(watcher)
 }
