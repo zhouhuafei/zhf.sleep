@@ -58,6 +58,7 @@
     "eslint-plugin-promise": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
+    "gulp-changed": "^4.0.3",
     "gulp-cli": "^2.3.0",
     "husky": "^7.0.4",
     "jest": "^27.5.1",
