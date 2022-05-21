@@ -1,6 +1,7 @@
 # editor files
 .idea
-.vscode
+.vscode/*
+!.vscode/extensions.json
 .DS_Store
 .hbuilderx
 *.suo
@@ -38,4 +39,4 @@ dist-ssr
 dist
 
 # project files
-config.ts
+#config.ts
