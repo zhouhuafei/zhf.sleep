@@ -60,7 +60,7 @@
     "gulp-babel": "^8.0.0",
     "gulp-changed": "^4.0.3",
     "gulp-cli": "^2.3.0",
-    "husky": "^7.0.4",
+    "husky": "^8.0.3",
     "jest": "^27.5.1",
     "lint-staged": "^12.3.4",
     "ts-jest": "^27.1.3",
