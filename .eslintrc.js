@@ -1,3 +1,4 @@
+// https://typescript-eslint.io/getting-started/#step-2-configuration
 module.exports = {
   root: true,
   env: {
