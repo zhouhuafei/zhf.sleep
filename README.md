@@ -5,7 +5,7 @@
 import { sleep } from 'zhf.sleep'
 
 async function fn () {
-  await sleep(3000)
+  await sleep(3000) // 异步等待3秒
   console.log('3秒后会打印这条日志')
 }
 
@@ -21,7 +21,7 @@ let timer = null
 async function fn () {
   const promise = sleep(3000)
   timer = sleep.timer
-  await promise
+  await promise // 异步等待3秒
   console.log('3秒后会打印这条日志')
 }
 
