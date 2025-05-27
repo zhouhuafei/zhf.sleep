@@ -11,6 +11,7 @@
     "npm": ">=9.6.7"
   },
   "scripts": {
+    "i": "npm i --legacy-peer-deps",
     "prepare": "husky",
     "lint": "cross-env NODE_ENV=production eslint ./ --ext .js,.ts",
     "fix": "npm run lint -- --fix",
