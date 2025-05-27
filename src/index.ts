@@ -6,4 +6,5 @@ function sleep (ms: number) {
   })
 }
 
+console.log('xxx')
 export { sleep }
