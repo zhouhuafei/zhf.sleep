@@ -1,6 +1,6 @@
 {
   "name": "zhf.sleep",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "zhf.sleep",
   "main": "./dist/index.js",
   "files": [
@@ -23,7 +23,7 @@
     "test": "jest",
     "dev": "npm run del && npm run gulpDev",
     "build": "npm run del && npm run gulpBuild && npm run ts2dts && npm run test",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run i && npm run build"
   },
   "repository": {
     "type": "git",
