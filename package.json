@@ -1,14 +1,14 @@
 {
   "name": "zhf.sleep",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "zhf.sleep",
   "main": "./dist/index.js",
   "files": [
     "dist"
   ],
   "engines": {
-    "node": "18.17.1",
-    "npm": "9.6.7"
+    "node": ">=18.17.1",
+    "npm": ">=9.6.7"
   },
   "scripts": {
     "prepare": "husky install",
